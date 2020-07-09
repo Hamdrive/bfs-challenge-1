@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+}
+
+
+body{
+    font-family: 'Blinker', sans-serif;
+}
+
+
+h3{
+    font-weight: normal;
+}
+
+
+
+.container{
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.top-navbar{
+    
+    width: 100%;
+    height: 80px;
+}
+.navbar-content{
+    width: 75%;
+    
+    margin: 0 auto;
+    height: 80px;
+}
+
+.navbar-content img{
+    height: 80px;
+    float: left;
+}
+
+.search{
+    width: 66%;;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    padding: 0 25px;
+    text-align: center;
+}
+.search button{
+    background-color: rgba(100, 100, 100, 0.5);
+    height: 48px;
+    width: 220px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    z-index: 1;
+    font-size: 15px;
+    color: white;
+}
+
+.search button:hover span{  /*span pseudo selector*/
+    color: grey;
+    cursor: pointer;
+}
+
+
+.signup{
+    width: 14%;
+    height: 80px;
+    display: inline-block;
+    float: right;
+    line-height: 80px;
+}
+
+.signup button{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    z-index: 1;
+    font-size: 15px;
+    color: white;
+}
+
+.signup button:hover span{  /*span pseudo selector*/
+    color: grey;
+    cursor: pointer;
+}
+
+.container{
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.main-content{
+    width: 90%;
+    height: 400px;
+    margin: 0px auto;
+    
+}
+
+.image-holders{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.55fr 1fr;
+    gap: 10px;
+}
+
+.intro-video{
+    width: 100%;
+    height: 400px;
+}
+
+.fullsizeimg-1{
+    width: 100%;
+    height: 400px;
+}
+
+.imgstack-container{
+    position: relative; /*make a separate container to set position reference for absolute*/
+}
+
+.halfsizeimgtop{
+    position: absolute; /* stack one image below another*/
+    width: 100%;
+    height: 200px;
+}
+
+.halfsizeimgbottom{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%)  /* stack one image below another*/
+}
+
+
+.fullsizeimg-2{
+    width: 100%;
+    height: 400px;
+}
+
+.description{
+    width: 90%;
+    margin: 0px auto;
+    padding: 32px 0px 64px 0px;
+    display: flex;
+}
+
+.basic-info{
+    width: 290px;
+    height: 100%;
+    margin-right: 100px;
+
+}
+
+.type{
+    height: 20px;
+}
+
+.type-bkg span{
+    font-family: 'Blinker', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    z-index: 1;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+.experience{
+    height: 32px;
+    margin: 8px 0;
+}
+
+.experience .exp-name{
+    color: white;
+}
+
+.location{
+    margin: 8px 0;
+
+}
+
+.location .loc-name h3{
+    color: white;
+    font-weight: 300;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+}
+
+.overall-rating{
+    margin-right: 5px;
+}
+
+.overall-rating span{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+.overall-rating .star{
+    margin-left: 3px;
+    font-size: 17px;
+    align-items: center;
+}
+
+.total-rating span{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+.tags{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.tag1, .tag2, .tag3{
+    background-color: #262626;
+    margin: 0 8px 8px 0;
+    border-radius: 4px;
+}
+
+.tags h4{
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.other{
+    width: 600px;
+    color: white;
+
+}
+
+.view-on-device{
+    display: flex;
+    padding: 15px 0;
+    margin-bottom: 18px;
+}
+
+.device-emoji{
+    width: 32px;
+}
+
+.device-emoji span{
+    font-size: 30px;
+}
+
+.devices{
+    padding: 10px 0;
+}
+.devices h3{
+    font-size: 1.17rem;
+    font-weight: 300;
+}
+
+.misc-info{
+    margin-top: 18px;
+    height: 80px;
+    width: 600px;
+    display: flex;
+}
+
+.duration-container, .group-container, .language-container{
+    padding-right: 25px;
+}
+
+.duration-sticker{
+    width: 125px;
+}
+
+.duration-text .duration, .group-text .group, .language-text .language{
+    width: 125px;
+    margin-top: 10px;
+    color: #a7a7a7;
+}
+
+.footer{
+    background-color: #0E0E0E;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.footer-location{
+    width: 100%;
+    height: 50px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.summary{
+    width: 250px;
+    height: 50px;
+    float: left;   
+}
+
+.summary .profile-picture{
+    height: 50px;
+    width: 50px;
+    float: left;    /*float done to keep pic to the left*/
+}
+
+.summary .profile-picture img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+}
+
+.short-name{
+    padding: 12px 0;
+    align-items: center;
+    width: 185px;
+    color: white;
+    float: right;   /*float done to keep tex to right, else it would stay below the pic*/
+    display: flex;
+}
+
+.short-name .short-experience , .short-ratings{
+    height:25px;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.short-name .short-experience span{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+    float: left;
+}
+
+
+.short-name .short-ratings span{
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    float: right;
+}
+
+.booking{
+    width: 350px;
+    height: 50px;
+    margin-left: auto;
+    display: flex;
+}
+
+.booking .rate{
+    padding: 12px 0;
+    margin-right: 15px;
+    height: 25px;
+    width: 150px;
+}
+
+.booking .rate span{
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.dates{
+    width: 200px;
+    height: 50px;
+}
+
+.dates .dates-button{
+    background-color: #ff5a5f;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    z-index: 1;
+}
+
+.dates .dates-button span{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.full-description{
+    color: white;
+    margin: 0 auto;
+    height: 800px;
+    width: 90%;
+}
+
+.what-youll-do{
+    margin: 64px 0 32px 0;
+    display: flex;
+}
+
+.left-title{
+    padding-right: 64px;
+    width: 33%;
+}
+
+.left-title span{
+    color: #484848;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+    position: sticky;
+    top: 20px;
+}
+
+.right-paragraph{
+    margin-left: 16px;
+    width: 100%;
+}
+
+.right-paragraph span{
+    font-weight: 300;
+    color: #484848;
+    font-size: 20px;
+    line-height: 1.5em;
+    white-space: pre-line;
+}
